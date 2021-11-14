@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(
+      307deg,
+      transparent 0%,
+      transparent 10%,
+      rgba(190, 190, 190, 0.04) 10%,
+      rgba(190, 190, 190, 0.04) 64%,
+      transparent 64%,
+      transparent 100%
+    ),
+    linear-gradient(
+      118deg,
+      transparent 0%,
+      transparent 11%,
+      rgba(190, 190, 190, 0.04) 11%,
+      rgba(190, 190, 190, 0.04) 31%,
+      transparent 31%,
+      transparent 100%
+    ),
+    linear-gradient(
+      73deg,
+      transparent 0%,
+      transparent 22%,
+      rgba(190, 190, 190, 0.04) 22%,
+      rgba(190, 190, 190, 0.04) 90%,
+      transparent 90%,
+      transparent 100%
+    ),
+    linear-gradient(
+      156deg,
+      transparent 0%,
+      transparent 51%,
+      rgba(190, 190, 190, 0.04) 51%,
+      rgba(190, 190, 190, 0.04) 97%,
+      transparent 97%,
+      transparent 100%
+    ),
+    linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0));
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80px;
+  .logo {
+    color: antiquewhite;
+    font-size: 5rem;
+    text-transform: uppercase;
+    position: relative;
+    margin-top: 30px;
+    &::before {
+      content: "beauty";
+      position: absolute;
+      color: inherit;
+      text-transform: uppercase;
+      bottom: -50%;
+      font-size: 1.5rem;
+      left: 50%;
+      transform: translate(-50%, -100%);
+    }
+  }
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 30px;
+}
+.link {
+  &-instagram {
+    width: 300px;
+    height: 300px;
+    background-image: url(../img/Instagram.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  &-facebook {
+    width: 300px;
+    height: 300px;
+    background-image: url(../img/Facebook.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
