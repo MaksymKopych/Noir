@@ -38,21 +38,21 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 50px;
+  margin: 70px;
   gap: 30px;
 }
 
 .link-instagram {
-  min-width: 300px;
-  height: 300px;
+  min-width: 250px;
+  height: 250px;
   background-image: url(../img/Instagram.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .link-facebook {
-  min-width: 300px;
-  height: 300px;
+  min-width: 250px;
+  height: 250px;
   background-image: url(../img/Facebook.png);
   background-repeat: no-repeat;
   background-position: center;
