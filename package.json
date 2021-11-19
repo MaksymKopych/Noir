@@ -439,5 +439,11 @@
   "bugs": {
     "url": "https://github.com/MaksymKopych/pojektTrening/issues"
   },
-  "homepage": "https://github.com/MaksymKopych/pojektTrening#readme"
+  "homepage": "https://github.com/MaksymKopych/pojektTrening#readme",
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "IE 10"
+  ]
 }
+  
