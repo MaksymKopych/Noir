@@ -151,4 +151,8 @@ body {
   -ms-flex-direction: column;
       flex-direction: column;
 }
+.footer a {
+  color: antiquewhite;
+  text-decoration: none;
+}
 /*# sourceMappingURL=main.css.map */

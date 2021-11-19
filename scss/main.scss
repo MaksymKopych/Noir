@@ -160,4 +160,8 @@ body {
   font-size: 1.5rem;
   @include centr;
   flex-direction: column;
+  a {
+    color: antiquewhite;
+    text-decoration: none;
+  }
 }
