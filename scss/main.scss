@@ -47,6 +47,9 @@ body {
       transparent 100%
     ),
     linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .header {
   @include centr;
@@ -156,4 +159,5 @@ body {
   gap: 30px;
   font-size: 1.5rem;
   @include centr();
+  flex-direction: column;
 }
