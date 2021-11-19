@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+@mixin centr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 body {
   min-height: 100vh;
   background-image: linear-gradient(
@@ -44,9 +49,7 @@ body {
     linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0));
 }
 .header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centr;
   min-height: 80px;
   .logo {
     color: antiquewhite;
@@ -67,28 +70,83 @@ body {
   }
 }
 .main {
-  display: flex;
+  @include centr;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin: 70px;
   gap: 30px;
 }
+.container {
+  display: flex;
+  min-width: 40%;
+  height: 300px;
+}
 .link {
   &-instagram {
+    @include centr;
     min-width: 250px;
     height: 250px;
-    background-image: url(../img/Instagram.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-image: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0)
+    );
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   }
   &-facebook {
+    @include centr;
     min-width: 250px;
     height: 250px;
-    background-image: url(../img/Facebook.png);
+    background-image: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0)
+    );
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  }
+  &-booksy {
+    @include centr;
+    min-width: 250px;
+    height: 250px;
+    background-image: linear-gradient(
+      135deg,
+      rgba(239, 50, 50, 0.1),
+      rgba(46, 88, 203, 0.1)
+    );
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  }
+}
+.logo {
+  &-inst {
+    width: 70%;
+    height: 70%;
+    background-image: url(../img/pngwing.com.png);
     background-repeat: no-repeat;
+    background-size: contain;
     background-position: center;
-    background-size: cover;
+  }
+  &-booksy {
+    width: 70%;
+    height: 70%;
+    background-image: url(../img/Booksy_Logomark_black.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  &-facebook {
+    width: 70%;
+    height: 70%;
+    background-image: url(../img/PinClipart.com_spray-bottle-spraying-clip_2198653.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
   }
 }
