@@ -441,7 +441,7 @@
   },
   "homepage": "https://github.com/MaksymKopych/pojektTrening#readme",
   "browserslist": [
-    "last 1 version",
+    "last 3 version",
     "> 1%",
     "IE 10"
   ]
