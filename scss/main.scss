@@ -75,8 +75,7 @@ body {
 .main {
   @include centr;
   flex-direction: column;
-  margin-top: 70px;
-  gap: 30px;
+  // margin-top: 50px;
 }
 .container {
   display: flex;
@@ -87,8 +86,8 @@ body {
 .link {
   &-instagram {
     @include centr;
-    min-width: 200px;
-    height: 200px;
+    min-width: 150px;
+    height: 150px;
     background-image: linear-gradient(
       135deg,
       rgba(255, 255, 255, 0.1),
@@ -101,8 +100,8 @@ body {
   }
   &-facebook {
     @include centr;
-    min-width: 200px;
-    height: 200px;
+    min-width: 150px;
+    height: 150px;
     background-image: linear-gradient(
       135deg,
       rgba(255, 255, 255, 0.1),
@@ -115,8 +114,8 @@ body {
   }
   &-booksy {
     @include centr;
-    min-width: 200px;
-    height: 200px;
+    min-width: 150px;
+    height: 150px;
     background-image: linear-gradient(
       135deg,
       rgba(255, 255, 255, 0.1),
