@@ -57,10 +57,12 @@ body {
   margin-top: 30px;
 }
 .header .logo h1 {
-  text-align: center;
-  letter-spacing: 15px;
   font-size: 3rem;
   position: relative;
+  font-weight: 400;
+}
+.header .logo h1 span {
+  letter-spacing: 14px;
 }
 .header .logo p {
   font-size: 0.8rem;
