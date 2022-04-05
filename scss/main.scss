@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
 }
 @mixin centr {
   display: flex;
@@ -49,45 +50,53 @@ body {
     linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0));
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 100px
+
 }
 .header {
   @include centr;
   min-height: 80px;
   .logo {
-    color: antiquewhite;
-    font-size: 5rem;
+    @include centr;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
-    position: relative;
     margin-top: 30px;
-    &::before {
-      content: "beauty";
-      position: absolute;
-      color: inherit;
-      text-transform: uppercase;
-      bottom: -50%;
-      font-size: 1.5rem;
-      left: 50%;
-      transform: translate(-50%, -100%);
+    
+    h1 {
+      text-align: center;
+      letter-spacing: 15px;
+      font-size: 3rem;
+      position: relative;
+    }
+    p{
+      font-size: 0.8rem
     }
   }
 }
 .main {
   @include centr;
   flex-direction: column;
-  // margin-top: 50px;
+  gap: 20px
+  
+}
+.content{
+  @include centr;
+  gap: 20px;
 }
 .container {
   display: flex;
   justify-content: center;
-  min-width: 40%;
-  height: 200px;
+}
+.contacts{
+  @include centr;
+  gap: 20px
 }
 .link {
   &-instagram {
     @include centr;
-    min-width: 150px;
-    height: 150px;
+    min-width: 75px;
+    height: 75px;
     background-image: linear-gradient(
       135deg,
       rgba(255, 255, 255, 0.1),
@@ -100,8 +109,8 @@ body {
   }
   &-facebook {
     @include centr;
-    min-width: 150px;
-    height: 150px;
+    min-width: 75px;
+    height: 75px;
     background-image: linear-gradient(
       135deg,
       rgba(255, 255, 255, 0.1),
@@ -114,8 +123,8 @@ body {
   }
   &-booksy {
     @include centr;
-    min-width: 150px;
-    height: 150px;
+    min-width: 75px;
+    height: 75px;
     background-image: linear-gradient(
       135deg,
       rgba(255, 255, 255, 0.1),
@@ -154,14 +163,20 @@ body {
   }
 }
 .footer {
-  color: antiquewhite;
+  color: rgb(248, 248, 248);
   padding: 20px;
   gap: 30px;
   font-size: 1.5rem;
   @include centr;
   flex-direction: column;
   a {
-    color: antiquewhite;
+    @include centr;
+    gap: 10px;
+    color: rgb(255, 255, 255);
     text-decoration: none;
+    img{
+      width: 35px;
+      height: 35px;
+    }
   }
 }
