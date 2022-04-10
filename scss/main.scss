@@ -11,19 +11,7 @@
   justify-content: center;
   align-items: center;
 }
-@keyframes movingDrops {
-  0% {
-    opacity: 1;
-  }
-  50% {
 
-    opacity: 0.5;
-  }
-  100% {
-
-    opacity: 0;
-  }
-}
 body{
   @include centr();
   min-height: 100vh;
@@ -64,20 +52,6 @@ body{
       transparent 100%
     ),
     linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0));
-    .drops {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100vh;
-      opacity: 1;
-      
-    }
-}
-.dropsDown {
-  animation-name: movingDrops;
-  animation-iteration-count: 1;
-  animation-duration: 3000ms;
 }
 .section {
   position: relative;
