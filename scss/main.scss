@@ -56,6 +56,7 @@ body {
 
 }
 .header {
+  opacity: 0;
   @include centr;
   min-height: 80px;
   .logo {
@@ -80,6 +81,7 @@ body {
   }
 }
 .main {
+  opacity: 0;
   @include centr;
   flex-direction: column;
   gap: 50px;
@@ -175,25 +177,29 @@ body {
   }
 }
 .footer {
+  opacity: 0;
   color: rgb(248, 248, 248);
   padding: 20px;
   gap: 20px;
   font-size: 0.8rem;
   @include centr;
   flex-direction: column;
-  a {
-    @include centr;
-    gap: 10px;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    img{
-      width: 35px;
-      height: 35px;
-    }
+}
+@keyframes movingBox {
+  0% {
+    opacity: 0;
   }
-  // .nip{
-  //   color: #c9c9c997;
-  //   font-size: 8px;
-  //   font-family: 'Courier New', Courier, monospace;
-  // }
+  50% {
+
+    opacity: 0.5;
+  }
+  100% {
+
+    opacity: 1;
+  }
+}
+.glow{
+  animation-name: movingBox;
+  animation-iteration-count: 1;
+  animation-duration: 1500ms;
 }
